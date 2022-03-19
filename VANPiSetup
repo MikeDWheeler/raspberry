@@ -1,0 +1,20 @@
+
+
+curl https://raw.githubusercontent.com/lukicdarkoo/rpi-wifi/master/configure | bash -s -- -a VANNETWORK 0times0equals0 -c WHEELER WHEELER1011
+curl https://raw.githubusercontent.com/lukicdarkoo/rpi-wifi/master/configure | bash -s -- -a MyAP myappass -c WifiSSID wifipass
+
+
+
+sudo dpkg --configure -a
+
+sudo apt --fix-broken install -y
+
+sudo apt install mosquitto mosquitto-clients -y
+
+sudo systemctl enable mosquitto
+
+sudo systemctl status mosquitto
+
+sudo apt-get update -y
+
+sudo apt install mosquitto-clients -y
